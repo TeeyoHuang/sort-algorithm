@@ -27,7 +27,7 @@ def ShellSort(arr):
     while(gap_list[k]>0):
         gap=gap_list[k]
         for i in range(gap,len(arr)):
-            for j in range(i-gap, -1, -1):
+            for j in range(i-gap, -1, -gap):
                 if arr[j]>arr[j+gap]:
                     arr[j], arr[j+gap]= arr[j+gap], arr[j]
         k+=1
